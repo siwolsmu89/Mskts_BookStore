@@ -1,7 +1,7 @@
-package APP;
+package app;
 
-import Service.BookService;
-import VO.Book;
+import service.BookService;
+import vo.Book;
 
 import java.util.Scanner;
 
