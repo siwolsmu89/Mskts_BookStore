@@ -8,9 +8,9 @@ public class BookService {
     private ArrayList<Book> savedBook = new ArrayList<Book>();
 
     public BookService() {
-        Book b1 = new Book("자바의 정석", "남궁 성", "한빛미디어", 35000, 100);
-        Book b2 = new Book("모모", "미하엘 엔데", "비룡소", 15000, 100);
-        Book b3 = new Book("백석 정본 시집", "고형진", "창작과 비평", 27000, 0);
+        Book b1 = new Book("What is Java", "NamGung Sung", "HanBit Media", 35000, 100);
+        Book b2 = new Book("Momo", "Michael Ende", "BiRyongSo", 15000, 100);
+        Book b3 = new Book("BaekSeok Poems", "H.J. Go", "Creation and Criticism", 27000, 0);
 
         savedBook.add(b1);
         savedBook.add(b2);
@@ -18,31 +18,31 @@ public class BookService {
     }
 
     public void insertBook(Book book) {
-        System.out.println("[도서 저장 서비스]");
-        System.out.println("책 정보를 저장합니다...");
+        System.out.println("[Book Saving Service]");
+        System.out.println("Saving Book Info...");
         // 책 정보를 받아와서 savedBook에 저장합니다.
-        System.out.println("책 정보 저장 성공!");
+        System.out.println("Success Saving Book Info!");
     }
 
     public void selectAllBooks() {
-        System.out.println("[모든 도서 조회 서비스]");
-        System.out.println("모든 책 정보를 조회합니다...");
+        System.out.println("[All Book Searching Service]");
+        System.out.println("Searching All Book Info...");
         // 모든 저장된 책의 간단한 정보를 화면에 표시합니다.
-        System.out.println("책 정보 조회 끝!");
+        System.out.println("Success Searching All Book Info!");
     }
 
     public void selectBookByTitle(String title) {
-        System.out.println("[제목 검색 서비스]");
-        System.out.println("입력받은 제목: " + title);
-        System.out.println("책을 검색합니다...");
-        // 저장된 책 중에서 제목에 일치하는 책이 있다면 화면에 표시하고, 없다면 "책 정보 없음!" 문구를 표시합니다.
-        System.out.println("책 정보 조회 끝!");
+        System.out.println("[Book Searching With Book Title Service]");
+        System.out.println("Title Keyword: " + title);
+        System.out.println("Searching Book with Keyword...");
+        // 저장된 책 중에서 제목에 일치하는 책이 있다면 화면에 표시하고, 없다면 "No Matching Book Info!" 문구를 표시합니다.
+        System.out.println("Success Searching Book Info With Title!");
     }
 
     public void updateBookInfo() {
-        System.out.println("[책 정보 수정 서비스]");
-        System.out.println("책 정보를 수정합니다..");
+        System.out.println("[Book Info Modifying Service]");
+        System.out.println("Modifying Book Info..");
         // 입력파라미터로 필요한 정보를 받고, 저장된 책의 정보를 수정합니다.
-        System.out.println("책 정보 수정 끝!");
+        System.out.println("Success Modifying Book Info!");
     }
 }
