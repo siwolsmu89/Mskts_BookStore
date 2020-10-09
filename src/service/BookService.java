@@ -20,7 +20,7 @@ public class BookService {
     public void insertBook(Book book) {
         System.out.println("[Book Saving Service]");
         System.out.println("Saving Book Info...");
-        // 책 정보를 받아와서 savedBook에 저장합니다.
+        savedBook.add(book);
         System.out.println("Success Saving Book Info!");
     }
 
